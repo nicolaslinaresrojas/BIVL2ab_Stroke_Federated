@@ -24,10 +24,8 @@ Developed by the **Machine Learning Analysis and Computer Vision (M_L_ACV)** and
 ## 📁 Repository Structure
 ```text
 BIVL2ab_Stroke_Federated/
-├── notebooks/
-│   └── Stroke_Federated_Inference.ipynb   # Complete Google Colab pipeline
-├── report/
-│   └── Ischemic_Stroke_Preprint.pdf       # Under evaluation preprint PDF
+├── Challenge_BIVL2ab.ipynb   # Complete Google Colab pipeline
+├── Domain-Similarity Aware Federated Learning for Robust Ischemic Stroke Classification in Multi-Center.pdf       # Under evaluation preprint PDF
 └── README.md                              # This documentation file
 ```
 
@@ -78,15 +76,19 @@ To run the pipeline locally or on Google Colab, you must:
    ├── center_1/
    │   └── train/
    │       └── png/        # Contains PXXXX_SXXXX_LABEL_MOD.png files
+   │       └── numpy/        
+
    ├── center_5/
    │   └── test/
    │       └── png/        # Contains unlabelled test files
+   │       └── numpy/        
+
    ```
 
 ---
 
 ## 💻 How to Run the Notebook
-1. Open the notebook `notebooks/Stroke_Federated_Inference.ipynb` in **Google Colab**.
+1. Open the notebook `Challenge_BIVL2ab.ipynb` in **Google Colab**.
 2. Mount your Google Drive where the dataset directory is hosted.
 3. Configure the `BASE_PATH` variable in the data loading cell.
 4. Execute the cells sequentially. The pipeline supports training on GPU (T4, L4, or A100 environments).
